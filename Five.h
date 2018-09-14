@@ -290,10 +290,10 @@ public:
 		return false;
 	}
 	
-	bool _undo()
+	void _undo()
 	{
 		if(_actlist.empty())
-			return false;
+			return;
 		else
 		{
 			undo(_State,_actlist.back());
